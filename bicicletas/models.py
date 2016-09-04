@@ -23,3 +23,7 @@ class Bicicleta(models.Model):
     # celular = models.RegexField(regex=r'^\+?1?\d{9,15}$', error_message=("Digite um número de celular válido"))
     celular = PhoneNumberField()
     email = models.EmailField(max_length=100)
+
+
+def __str__(self):
+    return self.dono
