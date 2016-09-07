@@ -3,4 +3,5 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.listar),
+    url(r'^bicicleta/([0-9]*)/$', views.bicicleta_detail, name="details"),
 ]
