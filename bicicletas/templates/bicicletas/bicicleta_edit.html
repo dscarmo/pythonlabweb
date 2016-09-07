@@ -1,0 +1,10 @@
+{% extends 'bicicletas/base.html' %}
+
+{% block content %}
+    <h1>Adicionando Bicicleta</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        Numero de celular em formato internacional por favor.
+        <button type="submit" class="save btn btn-default">Cadastrar</button>
+    </form>
+{% endblock %}

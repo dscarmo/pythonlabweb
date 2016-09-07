@@ -82,6 +82,9 @@ DATABASES = {
     }
 }
 
+#PHONENUMBER_DB_FORMAT = 'E164';
+
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/

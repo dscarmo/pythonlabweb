@@ -1,7 +1,16 @@
 {% extends 'bicicletas/base.html' %}
 {% block content %}
  <div class="bicicleta">
-     <h1>{{ bicicleta.dono }}</h1>
-     <p>{{ bicicleta.email}}</p>
+     <h1>Dono: {{ bicicleta.dono }}</h1>
+     <p>Fabricante: {{ bicicleta.fabricante}}</p>
+     <p>Modelo: {{ bicicleta.modelo}}</p>
+     <p>Cor: {{ bicicleta.cor}}</p>
+     <p>Marcha: {{ bicicleta.marcha}}</p>
+     <p>Marca do Câmbio: {{ bicicleta.marcaDoCambio}}</p>
+     <p>Celular: {{ bicicleta.celular}}</p>
+     <p>e-mail: {{ bicicleta.email}}</p>
+
+     <a class="btn btn-default" href="{% url 'edit' bicicleta.id %}"><span class="glyphicon glyphicon-pencil"></span></a>
+     <a class="btn btn-default" href="{% url 'delete' bicicleta.id %}">Excluir</a>
  </div>
 {% endblock content %}
